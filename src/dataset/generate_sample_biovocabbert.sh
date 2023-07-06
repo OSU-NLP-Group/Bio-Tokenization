@@ -1,0 +1,11 @@
+python generate_samples.py \
+    --dir data/pubmed_shards \
+    -o data/biovocabbert \
+    --dup_factor 10 \
+    --seed 42 \
+    --do_lower_case 1 \
+    --masked_lm_prob 0.15 \
+    --max_seq_length 128 \
+    --model_name ../../output/biovocabbert_tokenizer \
+    --max_predictions_per_seq 20 \
+    --n_processes 30
